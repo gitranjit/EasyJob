@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Jobox Project</title>
+        <title>EasyJob Project</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type= "text/css" href="{{ url_for('static',filename='styles/style.css') }}"> <!---{{ url_for('static',filename='styles/style.css') }}-->
@@ -17,13 +17,13 @@
             <nav>
                 <ul class="navbar">
                     <li><a href="{{url_for('home')}}">Home</a></li>
-                    <li><a href="{{url_for('about')}}">About Jobox</a></li>
+                    <li><a href="{{url_for('about')}}">About EasyJob</a></li>
                 </ul>
             </nav>
-            <a class="git" href="https://github.com/sinungadi/Jobox-Project.git"><button>Github</button></a>
+            <a class="git" href="https://github.com/YashKhapke/FinalYearProject"><button>Github</button></a>
         </header>
         <center>
-            <h1 class="title"> Upload Your Resume/CV</h1>
+            <h1 class="title"> Upload Your Resume</h1>
             <form method="POST" action="/submit" enctype="multipart/form-data">
                 <label for="fileUpload" id="upload">
                     <img src="{{ url_for('static',filename='img/file-upload.png') }}" alt=""> <!--{{ url_for('static',filename='file-upload.png') }}-->
@@ -65,9 +65,7 @@
             </div>
         </center>
         <footer>
-            <div class="copyright">
-                <small>Copyright &copy; 2022 - Jobox. All Rights Reserved</small>
-            </div>
+            
         </footer>
         <script src="{{ url_for('static',filename='java/button.js') }}"></script> <!--{{ url_for('static',filename='java/button.js') }}-->
     </body>
