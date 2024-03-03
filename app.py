@@ -10,11 +10,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from scipy.spatial.distance import euclidean
 from nltk.tokenize import word_tokenize
-import PyPDF2
-
-# Set up logging
-import logging
-logging.basicConfig(level=logging.DEBUG)
+import fitz  # PyMuPDF
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -32,9 +28,11 @@ def preprocess_text(text):
 # Extract skills from job descriptions
 def extract_skills(text, skills_df):
     skills = set()
+    text_lower = text.lower()
     for skill in skills_df['skills']:
-        if skill.lower() in text.lower():
-            skills.add(skill.lower())
+        skill_lower = skill.lower()
+        if skill_lower in text_lower:
+            skills.add(skill_lower)
     return list(skills)
 
 # Function to get vector representation of a text
@@ -51,11 +49,10 @@ def get_text_vector(text, model):
     return vector
 
 def extract_text_from_pdf(file_path):
-    with open(file_path, 'rb') as file:
-        reader = PyPDF2.PdfReader(file)
-        text = ''
-        for page_num in range(len(reader.pages)):
-            text += reader.pages[page_num].extract_text()
+    text = ''
+    with fitz.open(file_path) as doc:
+        for page in doc:
+            text += page.get_text()
     return text
 
 # Create a list of skills extracted from job descriptions
@@ -104,6 +101,7 @@ def submit_data():
         resume_text = preprocess_text(resume_text)
         resume_skills = extract_skills(resume_text, skills_df)
 
+        print(resume_skills)
         # Join the list of skills into a single string
         resume_skills_text = ' '.join(resume_skills)
 
@@ -122,6 +120,9 @@ def submit_data():
 
         # Sort recommended jobs based on similarity score
         recommended_jobs = recommended_jobs.sort_values(by='euclidean_distance', ascending=True)
+
+        # Remove duplicate job descriptions
+        recommended_jobs = recommended_jobs.drop_duplicates(subset=['description'])
 
         # Get top 10 recommended jobs
         top_10_jobs = recommended_jobs[['title', 'company', 'link']].head(10)
