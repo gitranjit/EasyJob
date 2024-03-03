@@ -1,0 +1,271 @@
+skills
+Networking 
+Protocols
+TCP/IP
+HTTP
+HTTPS
+FTP
+SMTP
+POP3
+IMAP
+DNS
+DHCP
+Security 
+OAuth
+JWT
+SSL/TLS
+OAuth2
+OpenID Connect
+SAML
+Kerberos
+LDAP
+RBAC
+Web 
+Servers
+Apache
+Nginx
+IIS
+Tomcat
+Lighttpd
+Jetty
+Node.js
+Caddy
+OpenLiteSpeed
+Programming 
+IntelliJ IDEA
+Eclipse
+PyCharm
+Atom
+Sublime 
+NetBeans
+Vim
+Xcode
+Testing 
+JUnit
+Selenium
+Cucumber
+TestNG
+Mockito
+Cypress
+Protractor
+SoapUI
+Postman
+Docker Hub
+Amazon ECR
+Google Container Registry
+Azure Container Registry
+Harbor
+Quay
+JFrog Artifactory
+GitLab Container Registry
+IBM Cloud Container Registry
+Serverless
+Google Cloud Functions
+IBM Cloud Functions
+Apache OpenWhisk
+Kubeless
+Fission
+IronFunctions
+OpenFaaS
+ Development 
+HTML
+JavaScript
+Angular
+Vue.js
+Node.js
+Bootstrap
+jQuery
+Mobile 
+iOS
+Android
+Kotlin
+React Native
+Flutter
+Xamarin
+Ionic
+PhoneGap
+Data 
+Analysis 
+SQL
+Python
+R
+Tableau
+Power BI
+Excel
+SAS
+SPSS
+MATLAB
+Machine 
+Learning 
+Python
+TensorFlow
+PyTorch
+Scikit-learn
+Keras
+Pandas
+NumPy
+Matplotlib
+OpenCV
+Cybersecurity 
+Ethical Hacking
+Penetration Testing
+SIEM
+Firewall Management
+VPN Configuration
+Security Auditing
+Risk Assessment
+Cryptography
+DevOps 
+CI/CD
+Infrastructure as Code
+Continuous Monitoring
+Automated Deployment
+Configuration Management
+Container Orchestration
+Microservices Architecture
+Site Reliability Engineering
+Agile Practices
+ Engineering 
+Data Warehousing
+Data Modeling
+Big Data Technologies
+Data Pipelines
+Data Lakes
+Data Governance
+Data Quality Management
+Data Integration
+Frontend
+React
+Vue.js
+Bootstrap
+jQuery
+Ember.js
+Backbone.js
+Svelte
+Polymer
+Backend 
+Spring Boot
+Django
+Ruby on Rails
+Laravel
+Flask
+ASP.NET
+Play Framework
+NestJS
+Fullstack 
+MEAN
+MERN
+MEVN
+LAMP
+JAMstack
+Serverless
+PERN
+Django REST
+Ruby on Rails API
+Visualization 
+Tableau
+Power BI
+QlikView
+D3.js
+Matplotlib
+Plotly
+Grafana
+Looker
+Sisense
+Programming 
+Languages
+Java
+Python
+C++
+JavaScript
+Ruby
+Swift
+Kotlin
+PHP
+Go
+Database 
+NoSQL
+MongoDB
+PostgreSQL
+MySQL
+Oracle
+Redis
+Cassandra
+Frameworks
+Spring
+React
+Angular
+Vue.js
+Express
+Flask
+Laravel
+Ruby on Rails
+Cloud 
+AWS
+Azure
+IBM Cloud
+Oracle Cloud
+Alibaba Cloud
+DigitalOcean
+Heroku
+VMware Cloud
+Operating Systems
+Windows
+macOS
+Linux
+Unix
+Ubuntu
+CentOS
+Red Hat
+Fedora
+Debian
+Version Control
+Git
+SVN
+Mercurial
+Bitbucket
+TFS
+CVS
+Perforce
+VSTS
+SourceTree
+Containerization
+Docker
+Kubernetes
+OpenShift
+Mesos
+Swarm
+Rancher
+Nomad
+LXC
+Podman
+Monitoring
+Prometheus
+Grafana
+Nagios
+Zabbix
+Datadog
+New Relic
+Splunk
+ELK Stack
+AppDynamics
+Automation 
+Jenkins
+Ansible
+Puppet
+Chef
+Terraform
+SaltStack
+Bamboo
+CircleCI
+Travis CI
+Programming 
+Object-Oriented
+Functional
+Procedural
+Declarative
+Event-Driven
+Imperative
+Logic
+Aspect-Oriented
+Concurrent
